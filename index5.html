@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tripleS</title>
+    <style>
+        body{
+            background-image: url(back1.jpg);
+            background-color: rgba(0,0,0.5,0.5);
+            background-blend-mode: overlay;
+           background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 30px;;
+            color: rgb(252, 163, 163);
+        }
+        .main{
+            border: 1px solid;
+            width: 100vw;
+            height: 100vh;
+        }
+        .note{
+        text-align: justify;
+        margin:5%;
+        font-size: 1.5rem;
+       }
+       .btn{
+        padding: 15px 40px;
+        border: none;
+        outline: none;
+        color: rgb(252, 163, 163);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+       }
+       .btn::after{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(57, 46, 46) ;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+       }
+       .btn::before{
+        content: "";
+        background: linear-gradient(
+            45deg,
+            rgb(163, 106, 106), maroon, rgb(180, 44, 67), white, pink, beige
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height:  calc(100% + 4px);
+        filter: blur(8px);
+       }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>I Love the whole of You ♥</h1>
+        <p class="note">"I love every part of you—the whole of you. Your endless love for me is the greatest gift I’ve ever known. It’s in the way you hold me close, the way your eyes search for mine, and the way you always put my happiness first."</p>
+        <p class="note">"I adore how you’re possessive, not in a way that confines me, but in a way that makes me feel cherished, like I’m the most precious part of your world. Your protective nature wraps around me like an unbreakable shield, and I know that with you, I’m always safe."</p>
+        <p class="note">"The way you care for me is unmatched—the small gestures, the thoughtful words, the way you notice even the tiniest changes in me. And when my world feels heavy, it’s your love that lifts me. You have this incredible ability to change my mood, to make me laugh, and to remind me how beautiful life can be with you by my side."</p>
+        <p class="note">"I love you, endlessly and completely, for who you are and for all the love you pour into me. With you, I have everything I’ve ever needed."</p> 
+        <a href="index4.html"><button class="btn">Back</button> </a>&nbsp;
+       
+    </div>
+</body>
+</html>

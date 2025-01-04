@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tripleS</title>
+    <style>
+        body{
+            background-image: url(back1.jpg);
+            background-color: rgba(0,0,0.5,0.5);
+            background-blend-mode: overlay;
+           background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 30px;;
+            color: rgb(252, 163, 163);
+        }
+        .main{
+            border: 1px solid;
+            width: 100vw;
+            height: 100vh;
+        }
+        .note{
+        text-align: justify;
+        margin:5%;
+        font-size: 1.5rem;
+       }
+       .btn{
+        padding: 15px 40px;
+        border: none;
+        outline: none;
+        color: rgb(252, 163, 163);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+       }
+       .btn::after{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(57, 46, 46) ;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+       }
+       .btn::before{
+        content: "";
+        background: linear-gradient(
+            45deg,
+            rgb(163, 106, 106), maroon, rgb(180, 44, 67), white, pink, beige
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height:  calc(100% + 4px);
+        filter: blur(8px);
+       }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>The Eyes I have a crush on ♥</h1>
+        <p class="note">"Your brown eyes hold the stories of a thousand sunsets and the warmth of every kind word ever spoken. When I look into them, I see a depth that feels like coming home—a place where love is endless and unspoken promises are kept." </p>
+        <p class="note">"Those eyes of yours have a way of calming my storms, of making me believe that everything will be okay. They light up when you smile, and in their glow, I find my happiest moments. They reflect your kindness, your strength, and the love you carry so effortlessly."</p>
+        <p class="note">"Every glance from you is a gift, every moment I get to lose myself in your gaze is a treasure. Your brown eyes are more than just beautiful—they are the windows to the soul of the man I love most in this world. "</p>
+        <a href="index2.html"><button class="btn">Back</button> </a>&nbsp;
+        <a href="index4.html"><button class="btn">Next</button></a>
+        
+    </div>
+</body>
+</html>

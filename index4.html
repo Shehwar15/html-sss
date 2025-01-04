@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tripleS</title>
+    <style>
+        body{
+            background-image: url(back1.jpg);
+            background-color: rgba(0,0,0.5,0.5);
+            background-blend-mode: overlay;
+           background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 30px;;
+            color: rgb(252, 163, 163);
+        }
+        .main{
+            border: 1px solid;
+            width: 100vw;
+            height: 100vh;
+        }
+        .note{
+        text-align: justify;
+        margin:5%;
+        font-size: 1.5rem;
+       }
+       .btn{
+        padding: 15px 40px;
+        border: none;
+        outline: none;
+        color: rgb(252, 163, 163);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+       }
+       .btn::after{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(57, 46, 46) ;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+       }
+       .btn::before{
+        content: "";
+        background: linear-gradient(
+            45deg,
+            rgb(163, 106, 106), maroon, rgb(180, 44, 67), white, pink, beige
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height:  calc(100% + 4px);
+        filter: blur(8px);
+       }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>The Voice I can hear every second ♥</h1>
+        <p class="note">"Your voice is my favorite melody—a sound that soothes my heart and makes my soul feel alive. Whether it’s the way you laugh, the way you whisper my name, or the stories you tell, every word feels like a gentle hug wrapped in love."</p>
+        <p class="note">"Your talks are my escape, my comfort, and my joy. I could sit for hours, listening to you share your dreams, your thoughts, or even the simplest details of your day. It’s not just the words you speak but the warmth and honesty in your tone that make me fall in love with you all over again."</p>
+        <p class="note">"If there’s one thing I want to carry with me for the rest of my life, it’s the sound of your voice and the way it feels like home. In your words, I’ve found endless comfort, laughter, and a love that I’ll cherish forever."</p>
+        <a href="index3.html"><button class="btn">Back</button> </a>&nbsp;
+        <a href="index5.html"><button class="btn">Next</button></a>
+        
+    </div>
+</body>
+</html>

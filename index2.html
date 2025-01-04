@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tripleS</title>
+    <style>
+        body{
+            background-image: url(back1.jpg);
+            background-color: rgba(0,0,0.5,0.5);
+            background-blend-mode: overlay;
+           background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            font-size: 30px;;
+            color: rgb(252, 163, 163);
+        }
+        .main{
+            border: 1px solid;
+            width: 100vw;
+            height: 100vh;
+        }
+        .note{
+        text-align: justify;
+        margin:5%;
+        font-size: 1.5rem;
+       }
+       .btn{
+        padding: 15px 40px;
+        border: none;
+        outline: none;
+        color: rgb(252, 163, 163);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+       }
+       .btn::after{
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(57, 46, 46) ;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+       }
+       .btn::before{
+        content: "";
+        background: linear-gradient(
+            45deg,
+            rgb(163, 106, 106), maroon, rgb(180, 44, 67), white, pink, beige
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 600%;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height:  calc(100% + 4px);
+        filter: blur(8px);
+       }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>To the Heart of my Man ♥</h1>
+        <p class="note">"Your heart is my safe haven, the place where my soul feels at peace. It’s a heart so pure, so giving, and so full of love that I often wonder how I got so lucky to call it mine. You carry a quiet strength, a tenderness that speaks louder than words, and a love that wraps around me like the warmest embrace."</p>
+        <p class="note">"Your heart beats with kindness, compassion, and an unwavering loyalty that fills every corner of my life with light. It’s in the little things you do—your gentle words, the way you look at me, and how you always seem to know when I need a little extra love—that I see just how beautiful your heart truly is." </p>
+        <p class="note">"You are my calm in the storm, my laughter in the quiet moments, and my forever in this world of fleeting things. Thank you for letting me call your heart home."</p>
+    <a href="index.html"><button class="btn">Back</button> </a>&nbsp;
+    <a href="index3.html"><button class="btn">Next</button></a>
+    </div>
+</body>
+</html>
